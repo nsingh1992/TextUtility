@@ -3,11 +3,6 @@ import PropTypes from "prop-types";
 import {Link} from "react-router-dom";
 
 export default function Navbar(props) {
-  // const handleRedModeTheme = () =>{
-  //   document.body.style.backgroundColor = '#FFCCCB';
-
-  //   //props.showAlert('Red Mode has been enabled','success');
-  // }
   return (
     <nav
       className="navbar navbar-expand-lg bg-body-tertiary"
@@ -63,18 +58,6 @@ export default function Navbar(props) {
               Enable Dark Mode
             </label>
           </div>
-          {/* <div className={`form-check form-switch text-${props.mode === 'light'?'red':'light'}`}>
-            <input
-              className="form-chec-kinput"
-              type="checkbox"
-              role="switch"
-              id="flexSwitchCheckDefaultForRedTheme"
-              onClick={props.toggleMode}
-            />
-            <label className="form-check-label" htmlFor="flexSwitchCheckDefault">
-              Enable Red Mode
-            </label>
-          </div> */}
         </div>
       </div>
     </nav>
@@ -85,8 +68,3 @@ Navbar.propTypes = {
   title: PropTypes.string.isRequired,
   aboutText: PropTypes.string,
 };
-
-// Navbar.defaultProps = {
-//     title: 'Set title here',
-//     aboutText: 'About text here'
-// }
